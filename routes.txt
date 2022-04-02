@@ -1,0 +1,16 @@
+api_v1_validation_codes POST   /api/v1/validation_codes(.:format)    api/v1/validation_codes#create
+         api_v1_session DELETE /api/v1/session(.:format)             api/v1/sessions#destroy
+                        POST   /api/v1/session(.:format)             api/v1/sessions#create
+         api_v1_account GET    /api/v1/account(.:format)             api/v1/accounts#show
+           api_v1_items GET    /api/v1/items(.:format)               api/v1/items#index
+                        POST   /api/v1/items(.:format)               api/v1/items#create
+            api_v1_item GET    /api/v1/items/:id(.:format)           api/v1/items#show
+                        PATCH  /api/v1/items/:id(.:format)           api/v1/items#update
+                        PUT    /api/v1/items/:id(.:format)           api/v1/items#update
+                        DELETE /api/v1/items/:id(.:format)           api/v1/items#destroy
+            api_v1_tags GET    /api/v1/tags(.:format)                api/v1/tags#index
+                        POST   /api/v1/tags(.:format)                api/v1/tags#create
+             api_v1_tag GET    /api/v1/tags/:id(.:format)            api/v1/tags#show
+                        PATCH  /api/v1/tags/:id(.:format)            api/v1/tags#update
+                        PUT    /api/v1/tags/:id(.:format)            api/v1/tags#update
+                        DELETE /api/v1/tags/:id(.:format)            api/v1/tags#destroy
